@@ -1,6 +1,6 @@
 /* remember, just start typing for css.  No tags. */
 /* this external style sheet is initially for the account page. */
-/* choose external style sheet over embedded because I expect it to be lengthy and it is best for uploading to GitHub.
+/* chose external style sheet over embedded because I expect it to be lengthy and it is best for uploading to GitHub.
 /* sections*/
     /*
     colored boxes with icons?  
@@ -9,6 +9,20 @@
     */
 
 
+
+.top_half
+    {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+        
+
+#top_half_images
+        {
+        text-align:center;      
+        }
+        
 .section1
         {
             width: 300px;
