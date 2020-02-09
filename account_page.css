@@ -1,0 +1,43 @@
+/* remember, just start typing for css.  No tags. */
+/* this external style sheet is initially for the account page. */
+/* choose external style sheet over embedded because I expect it to be lengthy and it is best for uploading to GitHub.
+/* sections*/
+    /*
+    colored boxes with icons?  
+    click the box to access the info - overlay popup boxes to view/edit the info.
+    may have to create images instead of css for the sections.
+    */
+
+
+.section1
+        {
+            width: 300px;
+            border: 2px solid orange;
+            padding: 50px;
+            margin: 20px;
+        }     
+
+
+.section2
+        {
+            width: 300px;
+            border: 2px solid palevioletred;
+            padding: 50px;
+            margin: 20px;
+        }     
+
+.section3
+        {
+            width: 300px;
+            border: 2px solid green;
+            padding: 50px;
+            margin: 20px;
+        }     
+
+.section4
+        {
+            width: 300px;
+            border: 2px solid red;
+            padding: 50px;
+            margin: 20px;
+        }     
