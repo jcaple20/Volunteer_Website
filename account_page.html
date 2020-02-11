@@ -5,6 +5,7 @@
 
         <!--temporary style test-->
             <link rel="stylesheet" href="css/account_page.css">
+            <link rel = "stylesheet" href="css/account_pages_forms.css">
     </head>
     <style>
         
@@ -97,7 +98,7 @@
             
             
                 <div class="tab">
-                <button class="tablinks" onclick="openSection(event, 'section1')"> My Account</button>
+                <button class="tablinks" onclick="openSection(event, 'section1')"> Account Info</button>
                 <button class="tablinks" onclick="openSection(event, 'section2')">Interests</button>
                 <button class="tablinks" onclick="openSection(event, 'section3')">Lists</button>
                 <button class="tablinks" onclick="openSection(event, 'section4')">Privacy</button>
@@ -105,7 +106,7 @@
                 </div>
             
                 <div id="section1" class="tabinfo">
-                    <h3>My Acccount</h3>
+                    <!--<h3>My Acccount</h3>-->
                     <p>Holds the following info about the account:</p>
                     <p> first name <br>
                         last name<br>
@@ -115,57 +116,57 @@
                         confirm password<br>
                         email address
                     </p>
+
+                        <!--button to edit form-->
+                        <a href="account_section_form.html"><button>Edit Information</button></a>
+
                 </div>
             
                 <div id="section2" class="tabinfo">
-                    <h3>Interests</h3>
+                    <!--<h3>Interests</h3>-->
+                    <p>Holds the following info about the interests:</p>
                     <p>
                     skills/abilities <br>
                     current organizations
                     </p>
+
+                    <!--button to form-->
+                    <button class="editlinks" onclick="openForm(event, 'section2Form')"> Edit Information</button>
                 </div>
             
                 <div id="section3" class="tabinfo">
-                    <h3>Lists</h3>
+                    <!--<h3>Lists</h3>-->
+                    <p>Holds the following info about the lists:</p>
                     <p>
                         Past Projects <br>
                         Favorited Projects
                     </p>
+
+                    <!--button to form-->
+                    <button class="editlinks" onclick="openForm(event, 'section3Form')"> Edit Information</button>
                 </div>
                     <div id="section4" class="tabinfo">
-                    <h3>Privacy</h3>
+                    <!--<h3>Privacy</h3>-->
+                    <p>Holds the following info about the privacy:</p>
                     <p>
                         search history <br>
                         blocked accounts/users
                     </p>
+                    <!--button to form-->
+                    <button class="editlinks" onclick="openForm(event, 'section4Form')"> Edit Information</button>
                 </div>
             
-                <script>
-                function openSection(evt, sectionNum) {
-                var i, tabinfo, tablinks;
-                tabinfo = document.getElementsByClassName("tabinfo");
-                for (i = 0; i < tabinfo.length; i++) {
-                    tabinfo[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(sectionNum).style.display = "block";
-                evt.currentTarget.className += " active";
-                }
-                </script>
-               
+                <!--EXTERNAL JAVASCRIPT FILE-->
+                <script src = "account_page.js"> </script>
+
+
+                        <!--be careful this is an html file for forms.  BE CAREFUL NOT TO MESS IT UP
+                            
+                        <object data="account_page_forms.html.html" > </object>
+                        -->
+              
             </body>
 
-  
-
-
-   
-   
-</body>
-
-     
 
     
 </hmtl>
