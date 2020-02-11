@@ -6,6 +6,9 @@
         <!--temporary style test-->
             <link rel="stylesheet" href="css/account_page.css">
     </head>
+    <style>
+        
+    </style>
             <!--Memos-->
                 <!--
                     links to call external css and js go in the head tags
@@ -84,42 +87,44 @@
                         -->  
 
             <!--precursory notes ended-->
-
+        
             <body>
 
 
                 <header>
                     <p>Logo (top right) and main nav goes here + other things</p>
                 </header>
-
+            
+            
                 <div class="tab">
-                <button class="tablinks" onclick="openSection(event, 'section1')"> My Account </button>
-                <button class="tablinks" onclick="openSection(event, 'section2')"> Interests </button>
-                <button class="tablinks" onclick="openSection(event, 'section3')"> Lists </button>
-                <button class="tablinks" onclick="openSection(event, 'section4')"> Privacy </button>
+                <button class="tablinks" onclick="openSection(event, 'section1')"> My Account</button>
+                <button class="tablinks" onclick="openSection(event, 'section2')">Interests</button>
+                <button class="tablinks" onclick="openSection(event, 'section3')">Lists</button>
+                <button class="tablinks" onclick="openSection(event, 'section4')">Privacy</button>
+            
                 </div>
-
+            
                 <div id="section1" class="tabinfo">
                     <h3>My Acccount</h3>
-                        <p>Holds the following info about the account:</p>
-                        <p> first name <br>
-                            last name<br>
-                            username<br>
-                            phone number<br>
-                            password<br>
-                            confirm password<br>
-                            email address
-                        </p>
+                    <p>Holds the following info about the account:</p>
+                    <p> first name <br>
+                        last name<br>
+                        username<br>
+                        phone number<br>
+                        password<br>
+                        confirm password<br>
+                        email address
+                    </p>
                 </div>
-
+            
                 <div id="section2" class="tabinfo">
                     <h3>Interests</h3>
-                        <p>
-                        skills/abilities <br>
-                        current organizations
-                        </p>
+                    <p>
+                    skills/abilities <br>
+                    current organizations
+                    </p>
                 </div>
-
+            
                 <div id="section3" class="tabinfo">
                     <h3>Lists</h3>
                     <p>
@@ -127,17 +132,38 @@
                         Favorited Projects
                     </p>
                 </div>
-                       
-                <div id="section4" class="tabinfo">
+                    <div id="section4" class="tabinfo">
                     <h3>Privacy</h3>
                     <p>
                         search history <br>
                         blocked accounts/users
                     </p>
                 </div>
+            
+                <script>
+                function openSection(evt, sectionNum) {
+                var i, tabinfo, tablinks;
+                tabinfo = document.getElementsByClassName("tabinfo");
+                for (i = 0; i < tabinfo.length; i++) {
+                    tabinfo[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(sectionNum).style.display = "block";
+                evt.currentTarget.className += " active";
+                }
+                </script>
+               
+            </body>
 
-                <script> src="account_page.js" </script>
-             </body>
+  
+
+
+   
+   
+</body>
 
      
 
