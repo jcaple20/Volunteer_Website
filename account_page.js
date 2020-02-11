@@ -1,3 +1,6 @@
+
+// functions for tabs
+
 function openSection(evt, sectionNum) {
     var i, tabinfo, tablinks;
     tabinfo = document.getElementsByClassName("tabinfo");
@@ -11,3 +14,9 @@ function openSection(evt, sectionNum) {
     document.getElementById(sectionNum).style.display = "block";
     evt.currentTarget.className += " active";
     }
+
+// funtions for section 1 from
+function showInput() {
+    document.getElementById('display').innerHTML = 
+                document.getElementById("fname").value;
+}
