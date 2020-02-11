@@ -4,11 +4,8 @@
         <title> Account Page </title>
 
         <!--temporary style test-->
-        <link rel="stylesheet" href="css/account_page.css"
-       
+            <link rel="stylesheet" href="css/account_page.css">
     </head>
-
-        <body>
             <!--Memos-->
                 <!--
                     links to call external css and js go in the head tags
@@ -47,169 +44,102 @@
                     history - volunteer & search
                     what is optional/required to enter?
                 -->
+
+
+                    <!--PROFILE INTRO, very top centered-->
+                        <!--
+                            profile photo here
+                            (name)
+                            Member Since (year)
+                            Bio: 
+                        -->           
+
+                    <!--section1 info (Account)-->        
+                        <!--
+                            first name
+                            last name
+                            username
+                            phone number
+                            password
+                            confirm password
+                            email address
+                            
+                        -->
+                    <!--section2 info (Interests)-->        
+                        <!--
+                            skills/abilities
+                            current organizations
+                        -->    
+                    
+                    <!--section3 info (Lists)-->        
+                        <!--
+                            Past Projects
+                            Favorited Projects
+                        -->  
+
+                    <!--section4 info (Privacy)-->        
+                        <!--
+                            search history
+                            blocked accounts/users
+                        -->  
+
             <!--precursory notes ended-->
 
-
-                        
-
-
-                        <!--PROFILE INTRO, very top centered-->
-                            <div>
-                                <!--profile photo here-->
-                                <h1> (name) </h1>
-                                <h1> Member Since (year) </h1>
-                                <h4> Bio: </h4>            
-                            </div> 
-                            <br>
+            <body>
 
 
-                        <!--images test-->
-                        <!--
-                            <img class = "top_half" img src = "images/section1_practice.png" alt = "Lists">
-                            <img class = "top_half" img src = "images/section2_practice.jpg" alt = "Interests">  
+                <header>
+                    <p>Logo (top right) and main nav goes here + other things</p>
+                </header>
 
-                        </div>
+                <div class="tab">
+                <button class="tablinks" onclick="openSection(event, 'section1')"> My Account </button>
+                <button class="tablinks" onclick="openSection(event, 'section2')"> Interests </button>
+                <button class="tablinks" onclick="openSection(event, 'section3')"> Lists </button>
+                <button class="tablinks" onclick="openSection(event, 'section4')"> Privacy </button>
+                </div>
 
-                            <img id = "account" img src = "images/section3_practice.jpg" alt = "Account">
-                            <img id = "privacy" img src = "images/section4_practice.jpg" alt = "Privacy">
+                <div id="section1" class="tabinfo">
+                    <h3>My Acccount</h3>
+                        <p>Holds the following info about the account:</p>
+                        <p> first name <br>
+                            last name<br>
+                            username<br>
+                            phone number<br>
+                            password<br>
+                            confirm password<br>
+                            email address
+                        </p>
+                </div>
 
-                        -->
-                        
+                <div id="section2" class="tabinfo">
+                    <h3>Interests</h3>
+                        <p>
+                        skills/abilities <br>
+                        current organizations
+                        </p>
+                </div>
 
-                      
-                            
-                        <!--editor textboxes for section 1-->    
-                        <div class="container">
-                            <div class="card">
-                            <h1 style="padding-left: 5px"> Account Info </h1>
-                            <form>
-                                <!--name-->
-                                    <div class="row">
-                                        <div class="col-25">
-                                        <input type="text" id="fname" name="firstname" placeholder="First Name">
-                                        </div>
-                                        <div class="col-25">
-                                        <input type="text" id="lname" name="lastname" placeholder="Last Name">
-                                        </div>
-                                    </div> 
-                                <!--username & phone-->     
-                                    <div class="row">
-                                        <div class="col-25">
-                                        <input type="text" id="uname" name="username" placeholder="Username">
-                                        </div>
-                                        <div class="col-25">
-                                        <input type="text" id="pnum" name="phonenumber" placeholder="Phone Number">
-                                        </div>
-                                    </div>  
-                                <!--email-->    
-                                    <div class="row">
-                                        <div class="col-75">
-                                        <input type="text" id="email" name="email" placeholder="Email">
-                                        </div>
-                                    </div>
-                                <!--street address-->    
-                                    <div class="row">
-                                        <div class="col-75">
-                                        <input type="text" id="address" name="address" placeholder="Street Address">
-                                        </div>
-                                    </div>
-                                <!--password & confirm-->
-                                    <div class="row">
-                                        <div class="col-25">
-                                        <input type="text" id="npw" name="newpassword" placeholder="New Password">
-                                        </div>
-                                        <div class="col-25">
-                                        <input type="text" id="confirm" name="password" placeholder="Confirm">
-                                        </div>
-                                    </div>
-                                <!--save changes button-->
-                                <div class="row">
-                                    <input type="submit" value="Submit">
-                                </div>
-                            </form>
+                <div id="section3" class="tabinfo">
+                    <h3>Lists</h3>
+                    <p>
+                        Past Projects <br>
+                        Favorited Projects
+                    </p>
+                </div>
+                       
+                <div id="section4" class="tabinfo">
+                    <h3>Privacy</h3>
+                    <p>
+                        search history <br>
+                        blocked accounts/users
+                    </p>
+                </div>
 
-                        <!--textboxes for section 1-->
-                        <!--prechoices to click-->    
-                            <div class="container">
-                                <div class="card">
-                                    <h1 style="padding-left: 5px"> My Lists </h1>
-                                    <form>
-                                        <!--volunteer experience-->
-                                        <div class="row">
-                                            <div class="col-75">
-                                            <textarea id="skills" name="skills" placeholder="My Skills"  style="height:100px"></textarea>
-                                            </div>
-                                        </div>
-                                        <!--favorites list-->
-                                        <div class="row">
-                                            <div class="col-75">
-                                                <textarea  id="org" name="organizations" placeholder="My Organizations"  style="height:100px"></textarea>
-                                            </div>
-                                        </div>
-                                         <!--save changes button-->
-                                        <div class="row">
-                                            <input type="submit" value="Submit">
-                                        </div>
-                                    </form>
+                <script> src="account_page.js" </script>
+             </body>
 
-  <!--SECTION 2, top left-->
-                                     
-                            <!--section 1z overlay image button-->
-                            <div>
-                                <button onclick="on()"> <img src = "images/section1_practice.png"/> </button>
-                            </div>
-
-                            <!--section 3 overlay-->
-                            <div id = "section1_overlay" onclick="off()">
-
-                                <!--section 3 overlay text-->    
-                                <div 
-                                    id = "section1_overlay_text">
-                                    <!--section title--> 
-                                    <h2> Lists </h2>  
-                                    <!--textboxes-->  
-                                    <h4> Volunteer History </h4>
-                                    <h4> Favorites </h4>  
-                                        <!--link, bottom middle within module-->
-                                        <h5> Edit Information </h5>     
-                                </div> 
-
-                            </div> <!--end of overlay div-->
-
-                            
-                                                    
-                            <br>    
-
-
-                        <!--SECTION 1, top right-->
-                            <div class = "section2">  
-                                <!--section title-->
-                                <h2> Interests </h2>  
-                                <!--textboxes-->  
-                                <h4> Skills: </h4>  
-                                <h4> Organizations: </h4>  
-                                    <!--link, bottom middle within module-->
-                                    <h5> Edit Information</h5>
-                            </div>
-                            <br>
-
-
-
-
-                        <!--SECTION 4, bottom right-->
-                            <div class = "section4">  
-                                <!--section title-->
-                                <h2> Privacy </h2>  
-                                <!--textboxes-->  
-                                <h4> Search History </h4>
-                                <h4> Blocked Accounts </h4>
-                                    <!--link, bottom middle within module-->
-                                    <h5> Edit Information</h5>
-                            </div>
-                            <br> 
-
-                           
-        </body>
+     
 
     
 </hmtl>
