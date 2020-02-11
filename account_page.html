@@ -2,12 +2,12 @@
 <hmtl>
     <head>
         <title> Account Page </title>
+
         <!--temporary style test-->
-        <link rel="stylesheet" href="account_page.css">
+        <link rel="stylesheet" href="css/account_page.css"
+       
     </head>
-    <style> 
-    
-    </style>
+
         <body>
             <!--Memos-->
                 <!--
@@ -24,70 +24,168 @@
                     password
                     email address
                     phone number
-                    bio
                     affiliated groups - through add buttons or type list by hand?
+                    - these should automatically add to the account page, because they were provided at the signup.
                 -->
                      
             <!--Added ideas -->
                 <!-- 
-                    modular layout - read left/right, top/bottom
+                    modular layout or card layout- read left/right, top/bottom
                     profile photo option - dimensions?
                     logout button - or should it be on the main page?
+                    bio - optional - display with profile photo
                     physical address
                     security questions
                     options to change/edit/save these things - words or icons?
-                    character counter
+                    character counter?
                     text boxes
-                    delete account
+                    delete account option
                     blocked users
                     skills
                     member since
-                    personalized recommendations
+                    personalized recommendations?
                     history - volunteer & search
-                    blocked list
                     what is optional/required to enter?
                 -->
             <!--precursory notes ended-->
 
 
+                        
+
+
                         <!--PROFILE INTRO, very top centered-->
                             <div>
-                                <!--profile photo-->
+                                <!--profile photo here-->
                                 <h1> (name) </h1>
-                                <h1> Member Since (year) </h1>            
+                                <h1> Member Since (year) </h1>
+                                <h4> Bio: </h4>            
                             </div> 
                             <br>
 
 
                         <!--images test-->
-                        <div id = "top_half_images">
+                        <!--
                             <img class = "top_half" img src = "images/section1_practice.png" alt = "Lists">
                             <img class = "top_half" img src = "images/section2_practice.jpg" alt = "Interests">  
+
                         </div>
 
                             <img id = "account" img src = "images/section3_practice.jpg" alt = "Account">
                             <img id = "privacy" img src = "images/section4_practice.jpg" alt = "Privacy">
+
+                        -->
                         
 
-                        <!--SECTION 1, top left-->
-                            <div class = "section1">  
-                            <!--section title--> 
-                                <h2> Lists </h2>  
-                                <!--textboxes-->  
-                                <h4> Voluneer History </h4>
-                                <h4> Favorites </h4>  
-                                    <!--link, bottom middle within module-->
-                                    <h5> Edit Information</h5>
-                            </div>                         
+                      
+                            
+                        <!--editor textboxes for section 1-->    
+                        <div class="container">
+                            <div class="card">
+                            <h1 style="padding-left: 5px"> Account Info </h1>
+                            <form>
+                                <!--name-->
+                                    <div class="row">
+                                        <div class="col-25">
+                                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+                                        </div>
+                                        <div class="col-25">
+                                        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                                        </div>
+                                    </div> 
+                                <!--username & phone-->     
+                                    <div class="row">
+                                        <div class="col-25">
+                                        <input type="text" id="uname" name="username" placeholder="Username">
+                                        </div>
+                                        <div class="col-25">
+                                        <input type="text" id="pnum" name="phonenumber" placeholder="Phone Number">
+                                        </div>
+                                    </div>  
+                                <!--email-->    
+                                    <div class="row">
+                                        <div class="col-75">
+                                        <input type="text" id="email" name="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                <!--street address-->    
+                                    <div class="row">
+                                        <div class="col-75">
+                                        <input type="text" id="address" name="address" placeholder="Street Address">
+                                        </div>
+                                    </div>
+                                <!--password & confirm-->
+                                    <div class="row">
+                                        <div class="col-25">
+                                        <input type="text" id="npw" name="newpassword" placeholder="New Password">
+                                        </div>
+                                        <div class="col-25">
+                                        <input type="text" id="confirm" name="password" placeholder="Confirm">
+                                        </div>
+                                    </div>
+                                <!--save changes button-->
+                                <div class="row">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+
+                        <!--textboxes for section 1-->
+                        <!--prechoices to click-->    
+                            <div class="container">
+                                <div class="card">
+                                    <h1 style="padding-left: 5px"> My Lists </h1>
+                                    <form>
+                                        <!--volunteer experience-->
+                                        <div class="row">
+                                            <div class="col-75">
+                                            <textarea id="skills" name="skills" placeholder="My Skills"  style="height:100px"></textarea>
+                                            </div>
+                                        </div>
+                                        <!--favorites list-->
+                                        <div class="row">
+                                            <div class="col-75">
+                                                <textarea  id="org" name="organizations" placeholder="My Organizations"  style="height:100px"></textarea>
+                                            </div>
+                                        </div>
+                                         <!--save changes button-->
+                                        <div class="row">
+                                            <input type="submit" value="Submit">
+                                        </div>
+                                    </form>
+
+  <!--SECTION 2, top left-->
+                                     
+                            <!--section 1z overlay image button-->
+                            <div>
+                                <button onclick="on()"> <img src = "images/section1_practice.png"/> </button>
+                            </div>
+
+                            <!--section 3 overlay-->
+                            <div id = "section1_overlay" onclick="off()">
+
+                                <!--section 3 overlay text-->    
+                                <div 
+                                    id = "section1_overlay_text">
+                                    <!--section title--> 
+                                    <h2> Lists </h2>  
+                                    <!--textboxes-->  
+                                    <h4> Volunteer History </h4>
+                                    <h4> Favorites </h4>  
+                                        <!--link, bottom middle within module-->
+                                        <h5> Edit Information </h5>     
+                                </div> 
+
+                            </div> <!--end of overlay div-->
+
+                            
+                                                    
                             <br>    
 
 
-                        <!--SECTION 2, top right-->
+                        <!--SECTION 1, top right-->
                             <div class = "section2">  
                                 <!--section title-->
                                 <h2> Interests </h2>  
                                 <!--textboxes-->  
-                                <h4> Bio: </h4> 
                                 <h4> Skills: </h4>  
                                 <h4> Organizations: </h4>  
                                     <!--link, bottom middle within module-->
@@ -96,22 +194,6 @@
                             <br>
 
 
-                        <!--SECTION 3, bottom left--> 
-                            <div class = "section3">  
-                                <!--section title--> 
-                                <h2> Account</h2>
-                                <!--textboxes-->  
-                                <h4> Full Name: </h4>
-                                <h4> Username: </h4>
-                                <h4> Password: </h4>
-                                <h4> Zip Code: </h4> 
-                                <h4> E-mail: </h4>
-                                <h4> Phone Number: </h4>
-                                <h4> Security Questions: </h4>
-                                    <!--link, bottom middle within module-->
-                                    <h5> Edit Information</h5>
-                            </div>
-                            <br>
 
 
                         <!--SECTION 4, bottom right-->
@@ -124,10 +206,10 @@
                                     <!--link, bottom middle within module-->
                                     <h5> Edit Information</h5>
                             </div>
-                            <br>      
-                            
-                      
-                        
+                            <br> 
 
+                           
         </body>
+
+    
 </hmtl>
