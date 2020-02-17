@@ -5,7 +5,7 @@
 
         <!--temporary style test-->
             <link rel="stylesheet" href="css/account_page.css">
-            <link rel = "stylesheet" href="css/account_pages_forms.css">
+            <link rel = "stylesheet" href="css/account_page_forms.css">
     </head>
     <style>
         
@@ -91,11 +91,16 @@
         
             <body>
 
-
                 <header>
                     <p>Logo (top right) and main nav goes here + other things</p>
                 </header>
             
+     
+
+                </div>
+
+
+
             
                 <div class="tab">
                 <button class="tablinks" onclick="openSection(event, 'section1')"> Account Info</button>
@@ -108,70 +113,164 @@
                 <div id="section1" class="tabinfo">
                     <!--<h3>My Acccount</h3>-->
                     <div class = "space"> 
-                    <ul style="list-style-type:none;">
-                        <li>First name: <br><br>
-                            Last name:<br><br>
-                            Username:<br><br>
-                            Phone number:<br><br>
-                            Email address: <br><br>
-                            Street Address: <br><br>
-                            Current Password:
-                        </li>
-                         <!--button to edit form-->
-                        <div class = "button"></div>
-                         <a href="section1_form.html"><button>Edit Information</button></a>
-                    </ul>
+                        &emsp;First name: <br><br>
+                        &emsp;Last name:<br><br>
+                        &emsp;Username:<br><br>
+                        &emsp;Phone number:<br><br>
+                        &emsp;Email address: <br><br>
+                        &emsp;Street Address: <br><br>
+                        &emsp;Current Password: <br>
+                        <div class = "space"> </div>
+                    
                 </div>
                     </p>
+                            <!--form overlay-->
+        
+                                <!-- Trigger/Open The Modal -->
+                                <button id="myBtn">Edit Information</button>
+                               <br><br>
+                         
 
-                       
-                        
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
 
-                            <!--edit form overlay-->
-                            
-                           
-                </div>
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="card">
+                                            <h1 style="padding-left: 5px" > Account Info </h1><br>
+                                              <form>
+                                                <!--name-->
+                                                    <div class="row">
+                                                        <div class="col-25">
+                                                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+                                                        </div>
+                                                        <div class="col-25">
+                                                        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                                                        </div>
+                                                    </div> 
+                                                <!--username & phone-->     
+                                                    <div class="row">
+                                                        <div class="col-25">
+                                                        <input type="text" id="uname" name="username" placeholder="Username">
+                                                        </div>
+                                                        <div class="col-25">
+                                                        <input type="text" id="pnum" name="phonenumber" placeholder="Phone Number">
+                                                        </div>
+                                                    </div>  
+                                                <!--email-->    
+                                                    <div class="row">
+                                                        <div class="col-75">
+                                                        <input type="text" id="email" name="email" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                <!--street address-->    
+                                                    <div class="row">
+                                                        <div class="col-75">
+                                                        <input type="text" id="address" name="address" placeholder="Street Address">
+                                                        </div>
+                                                    </div>
+                                                <!--password & confirm-->
+                                                    <div class="row">
+                                                        <div class="col-25">
+                                                        <input type="text" id="npw" name="newpassword" placeholder="New Password">
+                                                        </div>
+                                                        <div class="col-25">
+                                                        <input type="text" id="confirm" name="password" placeholder="Confirm">
+                                                        </div>
+                                                    </div>
+                                                <!--save changes button-->
+                                                <div class="row">
+                                                    <input type="submit" value="Save" > <!--*onclick="display()"-->
+                                                </div>
+                                      
+                                              </form>
+                                          </div>
+                                      
+                                            </div>
+                                    </div>
+                                </div> <!--end of modal content-->
+
+                                </div>
+
+                            </div> <!--end of tab --> 
+                                                            
             
                 <div id="section2" class="tabinfo">
                     <!--<h3>Interests</h3>-->
                     <div class = "space"> 
-                    <ul style="list-style-type:none;">
-                        <li> Skills/Abilities: <br><br>
-                            Current Organizations:
-                        </p>
-                        </li>
-                        <!--button to edit form-->
-                        <div class = "button"></div>
-                         <a href="section2_form.html"><button>Edit Information</button></a>
-                    </ul>
-                     </div>
-                
-                    <!--button to form
-                    <button class="editlinks" onclick="openForm(event, 'section2Form')"> Edit Information</button>
-                    -->
-                </div>
+             
+                        &emsp;Skills/Abilities: <br><br>
+                        &emsp;Current Organizations: <br><br>
+                    </div>
+                    
             
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn2">Edit Information</button>
+                    <br><br>
 
+                    <!-- The Modal -->
+                    <div id="myModal2" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="card">
+                                <h1 style="padding-left: 5px" > Interests </h1><br>
+                                  <form>
+                                    <!--skills-->
+                                    <div class="row">
+                                      <div class="col-75">
+                                        <textarea id="subject" name="skills" placeholder="Skills" style="height:100px"></textarea>
+                                      </div>
+                                    </div>
+                          
+                                    <div class="row">
+                                      <div class="col-75">
+                                        <textarea id="subject" name="org" placeholder="Current Organizations" style="height:100px"></textarea>
+                                      </div>
+                                    </div>
+                          
+                                    <!--save changes button-->
+                                    <div class="row">
+                                        <input type="submit" value="Save">
+                                    </div>
+                          
+                                  </form>
+                          
+                                </div>
+                              </div>
+                        </div>
+                    
+                    </div>
+
+                    </div>
+
+
+                </div> <!--end of tab-->
+
+               
+         
 
 
                 <div id="section3" class="tabinfo">
                     <!--<h3>Lists</h3>-->
                     <!--different display method-->
                     <div class = "space"> 
-                    <ul style="list-style-type:none;">
-                        <li>
-                            Past Projects: <br><br>
-                            Favorited Projects:
-                        </li>
-                        <!--button to edit form-->
-                        <div class = "button"></div>
-                         <a href="section3_form.html"><button>Edit Information</button></a>
-                    </ul>
-                </div>
+                                           
+                            &emsp;Past Projects: <br><br>
+                            &emsp;Favorited Projects:<br><br>
+        
+                    </div>
 
-                    <!--button to form
-                    <button class="editlinks" onclick="openForm(event, 'section3Form')"> Edit Information</button>
-                    -->
                 </div>
 
 
@@ -180,20 +279,13 @@
                     <!--<h3>Privacy</h3>-->
                     <!--different display method-->
                     <div class = "space"> 
-                        <ul style="list-style-type:none;">
-                        <li>
-                            Search History: <br><br>
-                            Blocked Accounts/users:
-                        </li>
-                        <!--button to edit form-->
-                        <div class = "button"></div>
-                         <a href="section4_form.html"><button>Edit Information</button></a>
-                        </ul>
-                    </div>
-                    <!--button to form
-                    <button class="editlinks" onclick="openForm(event, 'section4Form')"> Edit Information</button>
-                    -->
-                </div>
+                        &emsp;Search History: <br><br>
+                        &emsp;Blocked Accounts/users: <br><br>
+
+                        </div>
+                    </div>   
+                      
+                
             
                 <!--EXTERNAL JAVASCRIPT FILE-->
                 <script src = "account_page.js"> </script>
