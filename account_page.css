@@ -1,6 +1,8 @@
 /* remember, just start typing for css.  No tags. */
 /* this external style sheet is initially for the account page. */
 /* chose external style sheet over embedded because I expect it to be lengthy and it is best for uploading to GitHub, BUT NOW I DO NOT KNOW. I JUST NEED IT TO WORK. CAN DIVIDE LATER.
+/* blue, green, red, purple, yellow*/
+          
 
   
 
@@ -24,7 +26,7 @@ font-size: large;
 overflow: hidden;
 border: none;
 border-color:  rgba(56, 26, 2, 0.5);
-background-color: lightgreen;
+background-color: lightseagreen;
 }
 
 /* Style the buttons inside the tab */
@@ -78,5 +80,6 @@ background-color: lightyellow;
 
 .space {margin-top: 75px; }
 
-
-
+tr.spaceUnder>td {
+  padding-bottom: 1em;
+}

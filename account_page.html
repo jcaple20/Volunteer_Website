@@ -4,8 +4,9 @@
         <title> Account Page </title>
 
         <!--temporary style test-->
-            <link rel="stylesheet" href="css/account_page.css">
-            <link rel = "stylesheet" href="css/account_page_forms.css">
+            <link rel = "stylesheet" href = "css/account_page.css">
+            <link rel = "stylesheet" href = "css/account_page_forms.css">
+            <link rel = "stlyesheet" href = "css/account_page_photo_upload.css">
     </head>
     <style>
         
@@ -95,15 +96,13 @@
                     <p>Logo (top right) and main nav goes here + other things</p>
                 </header>
             
-     
-
-                </div>
-
+                <!--profile photo area-->
+                
 
 
             
                 <div class="tab">
-                <button class="tablinks" onclick="openSection(event, 'section1')"> Account Info</button>
+                <button class="tablinks" onclick="openSection(event, 'section1')">Account Info</button>
                 <button class="tablinks" onclick="openSection(event, 'section2')">Interests</button>
                 <button class="tablinks" onclick="openSection(event, 'section3')">Lists</button>
                 <button class="tablinks" onclick="openSection(event, 'section4')">Privacy</button>
@@ -113,18 +112,46 @@
                 <div id="section1" class="tabinfo">
                     <!--<h3>My Acccount</h3>-->
                     <div class = "space"> 
-                        &emsp;First name: <br><br>
-                        &emsp;Last name:<br><br>
-                        &emsp;Username:<br><br>
-                        &emsp;Phone number:<br><br>
-                        &emsp;Email address: <br><br>
-                        &emsp;Street Address: <br><br>
-                        &emsp;Current Password: <br>
-                        <div class = "space"> </div>
+                        <table style="width:25%">
+
+                            <!--table row = tr     table data cell = td     table header = th-->
+                          
+                            <tr class = "spaceUnder"> 
+                              <td>First Name:</td>
+                              <td>value</td>
+                            </tr>
+                                <tr class = "spaceUnder">
+                                <td>Last Name:</td>
+                                <td>value</td>
+                                </tr>
+                                    <tr class = "spaceUnder"> 
+                                    <td> Username:</td>
+                                    <td>value</td>
+                                    </tr>
+                                        <tr class = "spaceUnder">
+                                        <td>Phone Number:</td>
+                                        <td>value</td>
+                                        </tr>
+                                            <tr class = "spaceUnder"> 
+                                            <td>Email Address:</td>
+                                            <td>value</td>
+                                            </tr>
+                                                <tr class = "spaceUnder">
+                                                <td>Street Address:</td>
+                                                <td>value</td>
+                                                </tr> 
+                                                    <tr>
+                                                    <td>Current Password:</td>
+                                                    <td>value</td>
+                                                    </tr>
+                         
+                        </table>
+                   
                     
                 </div>
-                    </p>
-                            <!--form overlay-->
+
+  
+                                <!--form overlay-->
         
                                 <!-- Trigger/Open The Modal -->
                                 <button id="myBtn">Edit Information</button>
@@ -203,9 +230,22 @@
                 <div id="section2" class="tabinfo">
                     <!--<h3>Interests</h3>-->
                     <div class = "space"> 
-             
-                        &emsp;Skills/Abilities: <br><br>
-                        &emsp;Current Organizations: <br><br>
+                        <table style="width:25%">
+                            <!--table row = tr     table data cell = td     table header = th-->
+                            <tr>
+                              
+                            </tr>
+                            <tr class = "spaceUnder"> 
+                              <td>Skills & Abilities:</td>
+                              <td>value</td>
+                            </tr>
+                                <tr>
+                                <td>Current Organizations:</td>
+                                <td>value</td>
+                                </tr>
+                           
+                         
+                        </table>
                     </div>
                     
             

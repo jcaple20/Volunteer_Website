@@ -1,5 +1,5 @@
 
-// functions for tabs
+// FUNCTIONS FOR TABS
 
 function openSection(evt, sectionNum) {
     var i, tabinfo, tablinks;
@@ -14,6 +14,8 @@ function openSection(evt, sectionNum) {
     document.getElementById(sectionNum).style.display = "block";
     evt.currentTarget.className += " active";
     }
+
+// FUNCTIONS FOR MODAL BOXES
 
 // Get the first modal
 var modal = document.getElementById("myModal");
@@ -43,28 +45,30 @@ window.onclick = function(event) {
 
 
 
-// Get the second modal
-var modal2 = document.getElementById("myModal2");
+    // Get the second modal
+    var modal2 = document.getElementById("myModal2");
 
-// Get the button that opens the second modal
-var btn2 = document.getElementById("myBtn2");
+    // Get the button that opens the second modal
+    var btn2 = document.getElementById("myBtn2");
 
-// Get the <span> element that closes the second modal
-var span2 = document.getElementsByClassName("close")[0];
+    // Get the <span> element that closes the second modal
+    var span2 = document.getElementsByClassName("close")[0];
 
-// When the user clicks the second button, open the second modal 
-btn2.onclick = function() {
-  modal2.style.display = "block";
-}
+    // When the user clicks the second button, open the second modal 
+    btn2.onclick = function() {
+    modal2.style.display = "block";
+    }
 
-// When the user clicks on second <span> (x), close the second modal
-span.onclick = function() {
-  modal2.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the second modal, close it
-window.onclick = function(event) {
-  if (event.target == modal2) {
+    // When the user clicks on second <span> (x), close the second modal
+    span.onclick = function() {
     modal2.style.display = "none";
-  }
-}
+    }
+
+    // When the user clicks anywhere outside of the second modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+    }
+
+
