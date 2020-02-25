@@ -15,6 +15,16 @@ function openSection(evt, sectionNum) {
     evt.currentTarget.className += " active";
     }
 
+
+
+
+//FUNTIONS FOR PROFILE PHOTO
+
+
+
+
+
+
 // FUNCTIONS FOR MODAL BOXES
 
 // Get the first modal
