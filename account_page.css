@@ -7,81 +7,114 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: #019ADE;
 }
+
+/* Style the header */
+header {
+  background-color:red; 
+  padding: 100px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  z-index: -1;
+}
+/*#019ADE*/
 
 /*NAV SECTION CSS*  NAV SECTION CSS NAV SECTION CSS   NAV SECTION CSS   NAV SECTION CSS   NAV SECTION CSS   NAV SECTION CSS   NAV SECTION CSS/
 
-/*Navigation Bar */
-.topnav {
-  overflow: hidden;
-  background-color: #2C6BFF;
-}
 
-
-/*Navigation Bar "Home" */
-.topnav a {
-  float: left;
-  text-align: center;
-  padding: 20px 20px;
-  text-decoration: none;
-  font-size: 17px;
-  color: white;
-}
-
-/*Navigation Bar "Home" hover */
-.topnav a:hover {
-  background-color: #5588FF;
-  color: black;
-}
-
-
-/*Navigation Bar "Menu Icon" */
-.topnav .icon {
-  display: none;
-}
-
-/*Navigation Bar "Menu Icon" appears when below 600px */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+  
+  /*Navigation Bar */
+  /*padding order =  top, right, left, bottom. */
+  .topnav {
+    overflow: hidden;
+    background-color:#2C6BFF;
+    font-weight: normal;
+  }
+  
+  
+  /*Navigation Bar "Home" */
+  .topnav a {
+    float: left;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+  }
+  
+  /*Navigation Bar "Home" hover */
+  .topnav a:hover {
+    background-color: #5588FF;
+    color: black;
+  }
+  
+  
+  /*Navigation Bar "Menu Icon" */
+  .topnav .icon {
     display: none;
   }
-
-  /*Navigation Bar "Menu Icon" */
-  .topnav a.icon {
-    float: right;
-    display: block;
+  
+  /*Navigation Bar "Menu Icon" appears when below 600px */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+  
+    /*Navigation Bar "Menu Icon" */
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
   }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+      position: relative;
+    }
+  
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
   }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
+  
 .input-wrap {
   padding: 5px;
 }
 
-
-.search {
+/*Style for input fields*/
+input[type=text],
+[type=password], select, textarea {
   width: 100%;
-  position: relative;
-  display: flex;
+  padding: 12px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
+/*Style for submit button*/
+input[type=submit] {
+  background-color: #2C6BFF;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 6px;
+  margin-left: 7px;
+}
+
+/*SEARCH BAR CSS    SEARCH BAR CSS    SEARCH BAR CSS */
 .searchTerm {
   width: 100%;
   border: 3px solid #2C6BFF;
@@ -140,7 +173,7 @@ modalbutton:hover {
 /*TAB SECTION CSS TAB SECTION CSS   TAB SECTION CSS   TAB SECTION CSS   TAB SECTION CSS   TAB SECTION CSS   TAB SECTION CSS*/
 
 
-
+/*no longer needed
 #nav ul 
       {
         display: inline-block;
@@ -148,21 +181,8 @@ modalbutton:hover {
         font-size: 17px;
       }
 
-body 
-    {    
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #019ADE;
-    }
 
 
-/* Style the header */
-header {
-  background-color:none;
-  padding: 100px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
 
 
 /* Style the tab */
